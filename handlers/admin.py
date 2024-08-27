@@ -21,8 +21,7 @@ async def command_start_handler(message: Message) -> None:
 
     if user is not None:
         button = InlineKeyboardButton(text="Добавить админа", callback_data="add_admin")
-        button3 = InlineKeyboardButton(text="Удалить админа", callback_data="remove_admin")
-        button1 = InlineKeyboardButton(text="Список админов", callback_data="remove_admin")
+        button1 = InlineKeyboardButton(text="Удалить админа", callback_data="remove_admin")
         button2 = InlineKeyboardButton(text="Отправить сообщение пользователю", callback_data="send_message_to_user")
 
         keyboard = InlineKeyboardMarkup(inline_keyboard=[[button], [button1], [button2]])
